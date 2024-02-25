@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'screens/screens.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -9,36 +9,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
+      title: 'Serenify',
       theme: ThemeData(
         primarySwatch: Colors.deepPurple,
       ),
-      home: MaterialApp(
-        home: Scaffold(
-          appBar: AppBar(
-            title: const Text('Flutter Demo'),
-            backgroundColor: Colors.deepPurpleAccent,
-          ),
-          body: const Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                Text(
-                  'Hello World',
-                  style: TextStyle(fontSize: 30),
-                ),
-                Text(
-                  'Hello World',
-                  style: TextStyle(fontSize: 30),
-                ),
-                Text(
-                  'Hello World',
-                  style: TextStyle(fontSize: 30),
-                ),
-              ],
-            ),
-          ),
-        ),
+      home: const Scaffold(
+        body: AuthScreen(),
       ),
     );
   }
