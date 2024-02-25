@@ -1,3 +1,3 @@
 # Serenify
 
-This app connects you to a global community where you can discuss and find solutions to your legal battles.
+A real-world project on the subject of UN goal of PEACE, JUSTICE, AND STRONG INSTITUTIONS. Official Submission repo for the Google Solution Challenge.
